@@ -3,10 +3,41 @@
         <head>
 
             <title>About Me</title>
-            <link rel="stylesheet" href="./css/sidebar.css">
-            <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="./sub-css/sidebar.css">
+            <link rel="stylesheet" href="./sub-css/body.css">
+            <style>
+                @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+            </style>
         </head>
         <body>
-
+            <h1><center><strong>Computer King's Life Story</strong></center></h1>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; More Information</span>
+                
+                <script>
+                function openNav() {
+                  document.getElementById("myNav").style.width = "100%";
+                }
+                
+                function closeNav() {
+                  document.getElementById("myNav").style.width = "0%";
+                }
+                </script>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="whoami.html">About</a>
+                <a href="whatido.html">Services</a>
+                <a href="whoiveworkedwith.html">Clients</a>
+                <a href="getintouch.html">Contact</a>
+              </div>
+              <script>
+                function openNav() {
+                  document.getElementById("mySidenav").style.width = "250px";
+                }
+                
+                function closeNav() {
+                  document.getElementById("mySidenav").style.width = "0";
+                }
+                </script>
+            <p>Computer King, was an instagram page that started on May 28, 2019. This account was created with the sole intention of expressing my interest in computers. Never in my life did I think that this account ould get so much support. This account is a reminder to everyone, that anything is possible if you put your mind to it. I am a person who is more on the quiet/reserved side. </p>
         </body>
     </html>
